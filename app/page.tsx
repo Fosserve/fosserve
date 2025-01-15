@@ -2,6 +2,9 @@
 
 import Head from 'next/head';
 import Link from 'next/link';
+import FeatureCarousel from './components/features-sections';
+import FeatureExample from "./components/features"
+import Hero from './components/home';
 
 export default function Home() {
   return (
@@ -15,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <header className="bg-blue-500 text-white p-6">
+      <header className="bg-gradient-to-b from-blue-600 text-white/90 p-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">FOSServe</h1>
           <nav>
@@ -34,16 +37,13 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="container mx-auto p-6">
-        <section className="text-center py-10">
-          <h2 className="text-4xl font-bold">Revolutionizing Education with FOSServe</h2>
-          <p className="mt-4 text-lg text-gray-600">
-            FOSServe is a flagship initiative by FOSS Andhra Foundation, aiming to digitalize educational institutions through cutting-edge free and open-source solutions.
-          </p>
+      <main className="container mx-auto">
+        <section className="text-center h-screen flex items-center justify-center">
+          <Hero />
         </section>
 
         <section id="modules" className="py-10">
-          <h3 className="text-3xl font-bold mb-6">Our Modules</h3>
+          {/* <h3 className="text-3xl font-bold mb-6">Our Modules</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -92,16 +92,17 @@ export default function Home() {
                 <p className="text-gray-600">{module.description}</p>
               </div>
             ))}
-          </div>
+          </div> */}
+        <FeatureExample />
         </section>
 
         <section id="about" className="py-10 bg-gray-100">
-          <h3 className="text-3xl font-bold mb-4">About FOSServe</h3>
+          {/* <h3 className="text-3xl font-bold mb-4">About FOSServe</h3>
           <p className="text-gray-700">
             FOSServe is a comprehensive program dedicated to transforming educational institutions by harnessing the power of free and open-source software. Our mission is to simplify operations, enhance productivity, and create a seamless experience for all stakeholders in the education ecosystem.
-          </p>
+          </p> */}
         </section>
-
+        <FeatureCarousel />
         <section id="contact" className="py-10">
           <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
           <p className="text-gray-700 mb-4">
