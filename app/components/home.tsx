@@ -48,7 +48,7 @@ FOSServe is a flagship initiative by FOSS Andhra Foundation, aiming to digitaliz
         transition={{ delay: 0.6, duration: 0.8 }}
       >
         <button 
-          className="bg-[#2E2B5F] hover:bg-[#1E1B4F] text-white px-8 py-3 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
+          className="bg-[#2258ce] hover:bg-[#65acf5] text-white px-8 py-3 text-lg rounded-full transition-all duration-300 transform hover:scale-105"
         >
           Get a Demo
         </button>

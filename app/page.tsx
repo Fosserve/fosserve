@@ -5,6 +5,7 @@ import Link from 'next/link';
 import FeatureCarousel from './components/features-sections';
 import FeatureExample from "./components/features"
 import Hero from './components/home';
+import BlogSection from './components/blog-section';
 
 export default function Home() {
   return (
@@ -37,12 +38,12 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="container mx-auto">
+      <main className="container bg-black mx-auto">
         <section className="text-center h-screen flex items-center justify-center">
           <Hero />
         </section>
 
-        <section id="modules" className="py-10">
+        <section id="modules">
           {/* <h3 className="text-3xl font-bold mb-6">Our Modules</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -96,13 +97,14 @@ export default function Home() {
         <FeatureExample />
         </section>
 
-        <section id="about" className="py-10 bg-gray-100">
+        <section id="about">
           {/* <h3 className="text-3xl font-bold mb-4">About FOSServe</h3>
           <p className="text-gray-700">
             FOSServe is a comprehensive program dedicated to transforming educational institutions by harnessing the power of free and open-source software. Our mission is to simplify operations, enhance productivity, and create a seamless experience for all stakeholders in the education ecosystem.
           </p> */}
         </section>
         <FeatureCarousel />
+        <BlogSection />
         <section id="contact" className="py-10">
           <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
           <p className="text-gray-700 mb-4">

@@ -68,7 +68,7 @@ export default function FeaturesEaxmple() {
     <motion.div
       ref={containerRef}
       style={{ opacity }}
-      className="min-h-screen bg-black py-24"
+      className="min-h-screen bg-black pb-24"
     >
       <motion.div 
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
