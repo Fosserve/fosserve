@@ -6,6 +6,9 @@ import FeatureCarousel from './components/features-sections';
 import FeatureExample from "./components/features"
 import Hero from './components/home';
 import BlogSection from './components/blog-section';
+import PageSection from './components/section';
+import ArticlesPage from './components/articles';
+import Colabrate from "./components/contact-us"
 
 export default function Home() {
   return (
@@ -105,30 +108,10 @@ export default function Home() {
         </section>
         <FeatureCarousel />
         <BlogSection />
+        <PageSection/>
+        <ArticlesPage />
         <section id="contact" className="py-10">
-          <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
-          <p className="text-gray-700 mb-4">
-            Have questions or want to learn more about FOSServe? Reach out to us today!
-          </p>
-          <form className="grid gap-4 max-w-lg mx-auto">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="border p-2 rounded"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="border p-2 rounded"
-            />
-            <textarea
-              placeholder="Your Message"
-              className="border p-2 rounded h-32"
-            ></textarea>
-            <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-              Submit
-            </button>
-          </form>
+        <Colabrate />
         </section>
       </main>
 
